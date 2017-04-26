@@ -1,7 +1,7 @@
 {
-  "name": "Live Pure",
+  "name": "LivePure",
   "version": "0.0.1",
-  "description": "",
+  "description": "This project is a static site built for Live Pure",
   "main": "gulpfile.js",
   "author": "Ryan Johnson",
   "license": "MIT",
@@ -28,6 +28,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.1",
     "gulp-size": "^1.2.1",
-    "gulp-uglify": "^1.2.0"
+    "gulp-uglify": "^1.2.0",
+    "node-reset-scss": "^1.0.1"
   }
 }
