@@ -52,7 +52,8 @@ body {
   height: 100%;
   font-size: 18px;
   font-family: "mr-eaves-xl-modern-narrow", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  letter-spacing: .1em; }
 
 #splash {
   margin: 10% auto;
@@ -60,7 +61,8 @@ body {
   padding: 50px;
   width: 80%;
   text-align: center;
-  box-shadow: -1px 2px 59px 0px rgba(0, 0, 0, 0.75); }
+  box-shadow: -1px 2px 59px 0px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box; }
 
 #splash .logo {
   text-align: center;
@@ -92,7 +94,6 @@ body {
   margin-right: 10px;
   border: 0px;
   background-color: #f9f9f9;
-  width: 200px;
   margin-bottom: 10px; }
 
 #splash #email-signup input[type=submit] {
@@ -101,7 +102,7 @@ body {
   border: 1px #5c6670 solid;
   cursor: pointer;
   border-radius: 0px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #5c6670;
   letter-spacing: .2em; }
@@ -109,22 +110,26 @@ body {
 #splash #email-signup input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #f5426c;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 #splash #email-signup input::-moz-placeholder {
   /* Firefox 19+ */
   color: #f5426c;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 #splash #email-signup input:-ms-input-placeholder {
   /* IE 10+ */
   color: #f5426c;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 #splash #email-signup input:-moz-placeholder {
   /* Firefox 18- */
   color: #f5426c;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 #splash #flourish {
   margin: 50px 0; }
@@ -138,9 +143,14 @@ body {
 #splash #contact ul li:nth-child(2) {
   margin: 0px 20px; }
 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-  width: 60%; }
+@media screen and (min-width: 700px) {
+  #splash {
+    width: 60%;
+    padding: 100px; }
+  #splash #email-signup input.input {
+    width: 200px; } }
 
 @media screen and (min-width: 1001px) {
   #splash {
-    width: 50%; } }
+    width: 50%;
+    padding: auto; } }
