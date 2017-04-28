@@ -5,7 +5,9 @@ $white: #fff;
 $gray: #5c6670;
 $pink: #f5426c;
 
-$base-font-size: 16px;
+$base-font-size: 18px;
+
+$font: "mr-eaves-xl-modern-narrow",sans-serif;
 
 body {
 	background-size: cover;
@@ -13,7 +15,8 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	font-size: $base-font-size;
-	font-family: sans-serif;
+	font-family: $font;
+	font-weight: 300;
 }
 
 #splash {
@@ -35,8 +38,9 @@ body {
 		color: $green;
 		text-transform: uppercase;
 		margin: 10px;
-		font-size: .7em;
+		font-size: 1.2em;
 		font-weight: 600;
+		
 	}
 	
 	p {
@@ -52,13 +56,44 @@ body {
 	#email-signup {
 		input {
 			padding: 10px 20px;
+			font-family: $font;
+			font-size: 1em;
 			&.input {
 				padding: 10px 20px;
 				width: auto;
+				margin-right: 10px;
+				border: 0px;
+				background-color: #f9f9f9;
+				width: 200px;
+				margin-bottom: 10px;
 			}
 			&[type=submit] {
-				text-transform: uppercase;
-				padding: 10px 20px !important;
+		    padding:10px 20px; 
+		    background: transparent; 
+		    border: 1px $gray solid;
+		    cursor:pointer;
+		    -webkit-border-radius: 0px;
+		    border-radius: 0px; 
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    color: $gray;
+		    letter-spacing: .2em;
+			}
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: $pink;
+				font-weight: 500;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: $pink;
+				font-weight: 500;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: $pink;
+			  font-weight: 500;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: $pink;
+			  font-weight: 500;
 			}
 		}
 	}
