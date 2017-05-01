@@ -47,7 +47,7 @@ table {
 
 body {
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   height: 100%;
   font-size: 18px;
