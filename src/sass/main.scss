@@ -2,8 +2,11 @@
 
 $green: #91d3cb;
 $white: #fff;
+$offWhite: #f9f9f9;
 $gray: #5c6670;
+$midGray: #909faf;
 $lightGray: #d9d9d9;
+
 $pink: #f5426c;
 
 
@@ -84,8 +87,16 @@ img {
 		    border-radius: 0px; 
 		    font-weight: 500;
 		    text-transform: uppercase;
-		    color: $lightGray;
+		    color: $midGray;
 		    letter-spacing: .1em;
+		    transition: all .5s ease;
+				
+				&:hover {
+					color: $gray;
+					background-color: $offWhite;
+					border-color: $offWhite;
+				}
+
 			}
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			  color: $pink;
