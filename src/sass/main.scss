@@ -3,7 +3,10 @@
 $green: #91d3cb;
 $white: #fff;
 $gray: #5c6670;
+$lightGray: #d9d9d9;
 $pink: #f5426c;
+
+
 
 $base-font-size: 18px;
 
@@ -18,8 +21,11 @@ body {
 	font-family: $font;
 	font-weight: 300;
 	letter-spacing: .1em;
+	box-sizing: border-box;
 }
-
+img {
+	width: 100%;
+}
 #splash {
 	margin: 10% auto;
 	background-color: $white;
@@ -67,18 +73,19 @@ body {
 				border: 0px;
 				background-color: #f9f9f9;
 				margin-bottom: 10px;
+				letter-spacing: .1em;
 			}
 			&[type=submit] {
-		    padding:10px 20px; 
+		    padding:9px 20px; 
 		    background: transparent; 
-		    border: 1px $gray solid;
+		    border: 1px $lightGray solid;
 		    cursor:pointer;
 		    -webkit-border-radius: 0px;
 		    border-radius: 0px; 
 		    font-weight: 500;
 		    text-transform: uppercase;
-		    color: $gray;
-		    letter-spacing: .2em;
+		    color: $lightGray;
+		    letter-spacing: .1em;
 			}
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			  color: $pink;
@@ -115,6 +122,12 @@ body {
 				display: inline-block;
 				img {
 					width: 30px;
+			    filter: grayscale(70%);
+			    transition: all,.5s;
+					
+					&:hover {
+						filter: grayscale(0%);
+					}
 				}
 				&:nth-child(2) {
 					margin: 0px 20px;
@@ -149,5 +162,13 @@ body {
 	#splash {
 		width: 50%;
 		padding: auto;
+		
+		#email-signup {
+			input {
+				&.input {
+					width: 300px;
+				}
+			}
+		}
 	}
 }
