@@ -53,13 +53,17 @@ body {
   font-size: 18px;
   font-family: "mr-eaves-xl-modern-narrow", sans-serif;
   font-weight: 300;
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
 
 #splash {
   margin: 10% auto;
   background-color: #fff;
   padding: 50px;
-  width: 80%;
+  width: 90%;
   text-align: center;
   box-shadow: -1px 2px 59px 0px rgba(0, 0, 0, 0.75);
   box-sizing: border-box; }
@@ -90,22 +94,23 @@ body {
 
 #splash #email-signup input.input {
   padding: 10px 20px;
-  width: auto;
+  width: 90%;
   margin-right: 10px;
   border: 0px;
   background-color: #f9f9f9;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  letter-spacing: .1em; }
 
 #splash #email-signup input[type=submit] {
-  padding: 10px 20px;
+  padding: 9px 20px;
   background: transparent;
-  border: 1px #5c6670 solid;
+  border: 1px #d9d9d9 solid;
   cursor: pointer;
   border-radius: 0px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #5c6670;
-  letter-spacing: .2em; }
+  color: #d9d9d9;
+  letter-spacing: .1em; }
 
 #splash #email-signup input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -132,13 +137,22 @@ body {
   text-transform: uppercase; }
 
 #splash #flourish {
-  margin: 50px 0; }
+  width: 100%;
+  margin: 50px 0;
+  max-width: 300px; }
 
 #splash #contact ul li {
   display: inline-block; }
 
 #splash #contact ul li img {
-  width: 30px; }
+  width: 30px;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  transition: all,.5s; }
+
+#splash #contact ul li img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
 
 #splash #contact ul li:nth-child(2) {
   margin: 0px 20px; }
@@ -153,4 +167,6 @@ body {
 @media screen and (min-width: 1001px) {
   #splash {
     width: 50%;
-    padding: auto; } }
+    padding: auto; }
+  #splash #email-signup input.input {
+    width: 300px; } }
