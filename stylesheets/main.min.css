@@ -51,7 +51,7 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   font-size: 18px;
-  font-family: "franklin-gothic-urw-comp", sans-serif;
+  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   letter-spacing: .1em;
   box-sizing: border-box; }
@@ -89,7 +89,7 @@ img {
 
 #splash #email-signup input {
   padding: 10px 20px;
-  font-family: "franklin-gothic-urw-comp", sans-serif;
+  font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1em; }
 
 #splash #email-signup input.input {
