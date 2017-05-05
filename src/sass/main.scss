@@ -14,7 +14,7 @@ $pink: #f5426c;
 $base-font-size: 18px;
 
 $font: "franklin-gothic-urw",sans-serif;
-$compressedFont : "franklin-gothic-urw-cond",sans-serif;
+$compressedFont : "franklin-gothic-urw-comp",sans-serif;
 
 body {
 	background-size: cover;
@@ -59,6 +59,9 @@ img {
 		color: $gray;
 		margin-bottom: 1em;
 		line-height: 1.5em;
+		strong {
+			font-weight: 600;
+		}
 	}
 	
 	#content {
@@ -91,6 +94,7 @@ img {
 		    color: $midGray;
 		    letter-spacing: .1em;
 		    transition: all .5s ease;
+		    font-family: $compressedFont;
 				
 				&:hover {
 					color: $gray;
