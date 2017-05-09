@@ -87,8 +87,14 @@ img {
 #splash p strong {
   font-weight: 600; }
 
+#splash p.diff {
+  color: #f5426c;
+  font-size: 1.4em;
+  font-family: "franklin-gothic-urw-comp", sans-serif; }
+
 #splash #content {
-  padding: 50px 0; }
+  padding: 50px 0;
+  text-align: left; }
 
 #splash #email-signup input {
   padding: 10px 20px;

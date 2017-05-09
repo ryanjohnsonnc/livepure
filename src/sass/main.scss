@@ -62,10 +62,16 @@ img {
 		strong {
 			font-weight: 600;
 		}
+		&.diff {
+			color: $pink;
+			font-size: 1.4em;	
+			font-family: $compressedFont;
+		}
 	}
 	
 	#content {
 		padding: 50px 0;
+		text-align: left;
 	}
 	
 	#email-signup {
