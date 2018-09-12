@@ -6,9 +6,7 @@ $offWhite: #f9f9f9;
 $gray: #5c6670;
 $midGray: #909faf;
 $lightGray: #d9d9d9;
-
 $pink: #f5426c;
-
 
 
 $base-font-size: 18px;
@@ -40,21 +38,21 @@ img {
 	-moz-box-shadow: -1px 2px 59px 0px rgba(0,0,0,0.75);
 	box-shadow: -1px 2px 59px 0px rgba(0,0,0,0.75);
 	box-sizing: border-box;
-	
+
 	.logo {
 		text-align: center;
 		max-width: 238px;
+		margin-bottom: 25px;
 	}
-	
+
 	h1 {
 		color: $green;
 		text-transform: uppercase;
 		margin: 10px;
 		font-size: 1.2em;
 		font-weight: 600;
-		
 	}
-	
+
 	p {
 		color: $gray;
 		margin-bottom: 1em;
@@ -64,16 +62,41 @@ img {
 		}
 		&.diff {
 			color: $pink;
-			font-size: 1.4em;	
+			font-size: 1.4em;
 			font-family: $compressedFont;
 		}
 	}
-	
+
+	a.button {
+		display: block;
+		max-width: 200px;
+		margin: 0px auto;
+		padding:9px 20px;
+		background: transparent;
+		border: 1px $lightGray solid;
+		cursor:pointer;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		font-weight: 500;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $midGray;
+		letter-spacing: .1em;
+		transition: all .5s ease;
+		font-family: $compressedFont;
+
+		&:hover {
+			color: $gray;
+			background-color: $offWhite;
+			border-color: $offWhite;
+		}
+	}
+
 	#content {
 		padding: 50px 0;
 		text-align: left;
 	}
-	
+
 	#email-signup {
 		input {
 			padding: 10px 20px;
@@ -89,19 +112,19 @@ img {
 				letter-spacing: .1em;
 			}
 			&[type=submit] {
-		    padding:9px 20px; 
-		    background: transparent; 
+		    padding:9px 20px;
+		    background: transparent;
 		    border: 1px $lightGray solid;
 		    cursor:pointer;
 		    -webkit-border-radius: 0px;
-		    border-radius: 0px; 
+		    border-radius: 0px;
 		    font-weight: 500;
 		    text-transform: uppercase;
 		    color: $midGray;
 		    letter-spacing: .1em;
 		    transition: all .5s ease;
 		    font-family: $compressedFont;
-				
+
 				&:hover {
 					color: $gray;
 					background-color: $offWhite;
@@ -130,18 +153,18 @@ img {
 			&:-moz-placeholder { /* Firefox 18- */
 			  color: $pink;
 			  font-weight: 500;
-				text-transform: uppercase;	
-				font-family: $compressedFont;			
+				text-transform: uppercase;
+				font-family: $compressedFont;
 			}
 		}
 	}
-	
+
 	#flourish {
 		width: 100%;
 		margin: 50px 0;
 		max-width: 300px;
 	}
-	
+
 	#contact {
 		ul {
 			li {
@@ -150,7 +173,7 @@ img {
 					width: 30px;
 			    filter: grayscale(70%);
 			    transition: all,.5s;
-					
+
 					&:hover {
 						filter: grayscale(0%);
 					}
@@ -161,7 +184,7 @@ img {
 			}
 		}
 	}
-	
+
 }
 
 // TABLET MEDIA QUERY
@@ -170,7 +193,7 @@ img {
 	#splash {
 		width: 60%;
 		padding: 100px;
-		
+
 		#email-signup {
 			input {
 				&.input {
@@ -188,7 +211,7 @@ img {
 	#splash {
 		width: 60%;
 		padding: auto;
-		
+
 		#email-signup {
 			input {
 				&.input {
